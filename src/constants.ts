@@ -1,0 +1,45 @@
+/**
+ * ????????????
+ */
+export const COMMANDS = {
+  HELLO: '/hello',
+  ECHO: '/echo',
+  HELP: '/help',
+  DEMO: '/demo',
+} as const;
+
+/**
+ * ?????????????
+ */
+export const MESSAGE_KEYWORDS = {
+  GREETING: ['?????', 'hello', 'hi', '????', '?????'],
+  THANKS: ['?????', 'thank', 'thanks', '??'],
+  TIME: ['??', 'time', '??', '????'],
+} as const;
+
+/**
+ * ????????ID
+ */
+export const ACTION_IDS = {
+  BUTTON_CLICK: 'button_click',
+} as const;
+
+/**
+ * ?????
+ */
+export const BUTTON_VALUES = {
+  GOOD: 'good',
+  BAD: 'bad',
+} as const;
+
+/**
+ * ????????
+ */
+export const DEFAULT_CONFIG = {
+  PORT: 3000,
+  MESSAGE_HISTORY_LIMIT: 10,
+  RESPONSE_TYPE: {
+    EPHEMERAL: 'ephemeral',
+    IN_CHANNEL: 'in_channel',
+  },
+} as const;

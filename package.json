@@ -1,0 +1,35 @@
+{
+  "name": "mini-slack-bot",
+  "version": "1.0.0",
+  "description": "A practice Slack bot application for learning Slack Bot development",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/app.js",
+    "dev": "tsc --watch & node --watch dist/app.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "practice",
+    "training"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^3.17.1",
+    "@slack/logger": "^3.0.0",
+    "@slack/web-api": "^7.0.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
